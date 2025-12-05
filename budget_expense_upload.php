@@ -80,6 +80,9 @@
                             </thead>
                             <tbody>";
                     foreach ($files as $file) {
+                        if (str_starts_with($file, "~")) {
+                            continue;
+                        }
                         $filePath = $uploadDir . $file;
                         $size = round(filesize($filePath) / 1024, 2) . ' KB';
                         $mime = mime_content_type($filePath);
