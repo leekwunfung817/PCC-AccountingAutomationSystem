@@ -1,0 +1,40 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="AMuBLXB32T7dOuhoLmFI">
+    <mxGraphModel dx="1011" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-1" value="Azure Linux" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-2" value="PHP runtime" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Yu8GHBbnlTDtI9SGTwcE-1">
+          <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-3" value="SQLite" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Yu8GHBbnlTDtI9SGTwcE-1">
+          <mxGeometry x="210" y="40" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="Yu8GHBbnlTDtI9SGTwcE-1" source="Yu8GHBbnlTDtI9SGTwcE-2" target="Yu8GHBbnlTDtI9SGTwcE-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-4" value="PCC local -&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Task Scheduler&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="390" width="620" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-5" value="&lt;div&gt;Python&lt;/div&gt;PDF processor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Yu8GHBbnlTDtI9SGTwcE-4">
+          <mxGeometry x="60" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-8" value="&lt;div&gt;Python&lt;/div&gt;Xlsx processor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Yu8GHBbnlTDtI9SGTwcE-4">
+          <mxGeometry x="220" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-10" value="Mostly Alienware" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Yu8GHBbnlTDtI9SGTwcE-4">
+          <mxGeometry x="510" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="Yu8GHBbnlTDtI9SGTwcE-5" target="Yu8GHBbnlTDtI9SGTwcE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Yu8GHBbnlTDtI9SGTwcE-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.686;entryY=0.989;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Yu8GHBbnlTDtI9SGTwcE-8" target="Yu8GHBbnlTDtI9SGTwcE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
