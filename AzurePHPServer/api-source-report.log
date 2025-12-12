@@ -1,0 +1,61 @@
+https://accounting-automation-f6hadeevatceakdu.canadacentral-01.azurewebsites.net
+accounting-automation-f6hadeevatceakdu.canadacentral-01.azurewebsites.net/gpt-rest-php/info.php
+
+
+
+openapi: 3.1.0
+info:
+  title: ChatGPT Action Demo
+  description: A simple GET-based action for ChatGPT using a name parameter.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  version: 1.0.0
+servers:
+  - url: https://accounting-automation-f6hadeevatceakdu.canadacentral-01.azurewebsites.net
+paths:
+  /gpt-rest-php/info.php:
+    get:
+      tags:
+        - greeting
+      summary: Returns a greeting message
+      operationId: greetByName
+      parameters:
+        - name: name
+          in: query
+          required: false
+          schema:
+            type: string
+            example: Moana
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GreetingResponse"
+components:
+  schemas:
+    GreetingResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: Hello, Moana! Welcome to our ChatGPT action.
+
+
+
+root@e1bfdaf576f7:/home/site/wwwroot/gpt-rest-php# cat info.php 
+<?php
+header('Content-Type: application/json');
+
+$name = isset($_GET['name']) ? htmlspecialchars($_GET['name']) : 'Guest';
+echo json_encode([
+    'message' => "Hello, $name! Welcome to our ChatGPT action."
+]);
+?>
+root@e1bfdaf576f7:/home/site/wwwroot/gpt-rest-php# 
+
+
+
+
